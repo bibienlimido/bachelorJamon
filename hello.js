@@ -1,39 +1,26 @@
-//
-// A JavaScript based on Node.js
-//
-// Nicolas Hennion (aka) Nicolargo
-//
-// GPL v3.0
-//
+/*Chargement du serveur*/
 var http = require('http');
-var url = require('url');
-var spawn = require ('child_process').spawn;
-//**********
-// Variables
-//**********
-var listenport = 8080;
-//**********
-// Functions
-//**********
-// Chomp function (delete the \n)
-String.prototype.chomp = function () {
-return this.replace(/(\n|\r)+$/, '');
-};
-// HTTP request
-function onRequest(req, res) {
-console.log("New request: "+req.url);
-res.writeHead(200, {'Content-Type': 'text/plain'});
-res.write('Champagne');
-res.end();
-};
-//*************
-// Main program
-//*************
-// Create the HTTP server
-http.createServer(onRequest).listen(listenport);
-// Get the hostname (FQDN)
-var listenaddress = spawn('hostname', ['-f']);
-listenaddress.stdout.on('data', function (data) {
-var fqdn = new String(data);
-console.log('Server running listenning http://'+fqdn.chomp()+':'+listenport+'/');
+/*Demande l'url*/
+var url = require("url");
+
+/*Le serveur repond 200 et un html*/
+var server = http.createServer(function(req, res) {
+	/*stocke la page demander*/
+	var page = url.parse(req.url).pathname;
+	/*log dans la console*/
+	console.log(page);
+    res.writeHead(200, {"Content-Type": "text/html"});
+    res.write('<!DOCTYPE html>'+
+'<html>'+
+'    <head>'+
+'        <meta charset="utf-8" />'+
+'        <title>Ma page Node.js !</title>'+
+'    </head>'+ 
+'    <body>'+
+'     	<p>Voici un paragraphe <strong>HTML</strong> !</p>'+
+'    </body>'+
+'</html>');
+    res.end();
 });
+/*port d'écoute du serveur*/
+server.listen(8080);
