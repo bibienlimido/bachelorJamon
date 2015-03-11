@@ -10,16 +10,15 @@ var server = http.createServer(function(req, res) {
 	/*log dans la console*/
 	console.log(page);
     res.writeHead(200, {"Content-Type": "text/html"});
-    res.write('<!DOCTYPE html>'+
-'<html>'+
-'    <head>'+
-'        <meta charset="utf-8" />'+
-'        <title>Ma page Node.js !</title>'+
-'    </head>'+ 
-'    <body>'+
-'     	<p>Voici un paragraphe <strong>HTML</strong> !</p>'+
-'    </body>'+
-'</html>');
+    if(page == "/"){
+    	res.write('Vous etes a l\'accueil , que puis-je pour vour');
+    	
+    }
+    else if(page == '/index'){
+    	res.write('vous etes sur l\'index');
+    	
+    }
+
     res.end();
 });
 /*port d'écoute du serveur*/
