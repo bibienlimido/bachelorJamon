@@ -3,7 +3,7 @@ var http = require('http');
 /*Demande l'url*/
 var url = require("url");
 /*recupère des parametres*/
-var queryString = require('queryString');
+var querystring = require('querystring');
 
 /*Le serveur repond 200 et un html*/
 var server = http.createServer(function(req, res) {
@@ -29,8 +29,6 @@ var server = http.createServer(function(req, res) {
 
 
 	}
-
-
 
 	res.end();
 });
