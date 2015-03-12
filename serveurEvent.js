@@ -17,7 +17,7 @@ jeu.on('gameover', function(message){
     console.log(message);
 });
 
-9jeu.emit('gameover', 'Vous avez perdu !');
+jeu.emit('gameover', 'Vous avez perdu !');
 
 server.listen(8080); // Démarre le serveur
 
