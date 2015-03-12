@@ -9,6 +9,6 @@ server.on('close', function() { // On écoute l'évènement close
 	console.log('Bye bye !');
 })
 
-12 server.listen(8080); // Démarre le serveur
+server.listen(8080); // Démarre le serveur
 
-14 server.close(); // Arrête le serveur. Déclenche l'évènement close
+server.close(); // Arrête le serveur. Déclenche l'évènement close
