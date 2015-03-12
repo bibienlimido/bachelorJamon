@@ -8,6 +8,16 @@ var server = http.createServer(function(req, res) {
 server.on('close', function() { // On écoute l'évènement close
 	console.log('Bye bye !');
 })
+/*Cree un eventEmitter*/
+var EventEmitter = require('events').EventEmitter;
+/*nom de l'evenement*/
+var jeu = new EventEmitter();
+
+jeu.on('gameover', function(message){
+    console.log(message);
+});
+
+9jeu.emit('gameover', 'Vous avez perdu !');
 
 server.listen(8080); // Démarre le serveur
 
