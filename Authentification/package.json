@@ -1,7 +1,6 @@
-// package.json
 
 {
-  "name": "node-authentication",
+  "name": "authentication",
   "main": "server.js",
   "dependencies" : {
     "express" : "~4.0.0",           
