@@ -10,7 +10,7 @@ module.exports = {
 /*
  * config pour la db
  */
-    'url' : '<authuser>:authuser>@mongo.192.168.1.122:27017/authdb' // looks like mongodb:
+    'url' : 'mongodb://authuser:authuser@192.168.1.122:27017/authdb' // looks like mongodb:
     ////<user>:<pass>@mongo.onmodulus.net:27017/Mikha4ot
 
 };
