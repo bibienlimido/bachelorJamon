@@ -1,0 +1,176 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'rimraf',
+1 verbose cli   '-g' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.36
+4 verbose cache add [ 'rimraf', null ]
+5 verbose cache add name=undefined spec="rimraf" args=["rimraf",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'rimraf',
+6 verbose parsed url   path: 'rimraf',
+6 verbose parsed url   href: 'rimraf' }
+7 silly lockFile d02b921e-rimraf rimraf
+8 verbose lock rimraf /home/freyer/.npm/d02b921e-rimraf.lock
+9 silly lockFile d02b921e-rimraf rimraf
+10 silly lockFile d02b921e-rimraf rimraf
+11 verbose addNamed [ 'rimraf', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 30545280-rimraf rimraf@
+14 verbose lock rimraf@ /home/freyer/.npm/30545280-rimraf.lock
+15 silly addNameRange { name: 'rimraf', range: '*', hasData: false }
+16 verbose request where is /rimraf
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 90e3d40b55afb2b1
+19 verbose url raw /rimraf
+20 verbose url resolving [ 'https://registry.npmjs.org/', './rimraf' ]
+21 verbose url resolved https://registry.npmjs.org/rimraf
+22 verbose request where is https://registry.npmjs.org/rimraf
+23 info trying registry request attempt 1 at 15:28:39
+24 http GET https://registry.npmjs.org/rimraf
+25 http 200 https://registry.npmjs.org/rimraf
+26 silly registry.get cb [ 200,
+26 silly registry.get   { date: 'Wed, 11 Mar 2015 14:28:47 GMT',
+26 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly registry.get     etag: '"CBCE428ER7XGZA7DZTSRTKT4L"',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     'content-length': '36191',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '1',
+26 silly registry.get     'x-served-by': 'cache-fra1248-FRA',
+26 silly registry.get     'x-cache': 'HIT',
+26 silly registry.get     'x-cache-hits': '1',
+26 silly registry.get     'x-timer': 'S1426084127.847551,VS0,VE0',
+26 silly registry.get     vary: 'Accept',
+26 silly registry.get     'keep-alive': 'timeout=10, max=50',
+26 silly registry.get     connection: 'Keep-Alive' } ]
+27 silly addNameRange number 2 { name: 'rimraf', range: '*', hasData: true }
+28 silly addNameRange versions [ 'rimraf',
+28 silly addNameRange   [ '1.0.0',
+28 silly addNameRange     '1.0.1',
+28 silly addNameRange     '1.0.2',
+28 silly addNameRange     '1.0.4',
+28 silly addNameRange     '1.0.5',
+28 silly addNameRange     '1.0.6',
+28 silly addNameRange     '1.0.7',
+28 silly addNameRange     '1.0.8',
+28 silly addNameRange     '1.0.9',
+28 silly addNameRange     '2.0.0',
+28 silly addNameRange     '2.0.1',
+28 silly addNameRange     '2.0.2',
+28 silly addNameRange     '2.0.3',
+28 silly addNameRange     '2.1.0',
+28 silly addNameRange     '2.1.1',
+28 silly addNameRange     '2.1.2',
+28 silly addNameRange     '2.1.3',
+28 silly addNameRange     '2.1.4',
+28 silly addNameRange     '2.2.0',
+28 silly addNameRange     '2.2.1',
+28 silly addNameRange     '2.2.2',
+28 silly addNameRange     '2.2.3',
+28 silly addNameRange     '2.2.4',
+28 silly addNameRange     '2.2.5',
+28 silly addNameRange     '2.2.6',
+28 silly addNameRange     '2.2.8',
+28 silly addNameRange     '2.3.0',
+28 silly addNameRange     '2.3.1',
+28 silly addNameRange     '2.3.2' ] ]
+29 verbose addNamed [ 'rimraf', '2.3.2' ]
+30 verbose addNamed [ '2.3.2', '2.3.2' ]
+31 silly lockFile abb2e9cb-rimraf-2-3-2 rimraf@2.3.2
+32 verbose lock rimraf@2.3.2 /home/freyer/.npm/abb2e9cb-rimraf-2-3-2.lock
+33 silly lockFile 454fbef2-pmjs-org-rimraf-rimraf-2-3-2-tgz https://registry.npmjs.org/rimraf/-/rimraf-2.3.2.tgz
+34 verbose lock https://registry.npmjs.org/rimraf/-/rimraf-2.3.2.tgz /home/freyer/.npm/454fbef2-pmjs-org-rimraf-rimraf-2-3-2-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/rimraf/-/rimraf-2.3.2.tgz',
+35 verbose addRemoteTarball   '7304bd9275c401b89103b106b3531c1ef0c02fe9' ]
+36 info retry fetch attempt 1 at 15:28:40
+37 verbose fetch to= /tmp/npm-2743-G9lclO_6/registry.npmjs.org/rimraf/-/rimraf-2.3.2.tgz
+38 http GET https://registry.npmjs.org/rimraf/-/rimraf-2.3.2.tgz
+39 http 200 https://registry.npmjs.org/rimraf/-/rimraf-2.3.2.tgz
+40 silly lockFile 454fbef2-pmjs-org-rimraf-rimraf-2-3-2-tgz https://registry.npmjs.org/rimraf/-/rimraf-2.3.2.tgz
+41 silly lockFile 454fbef2-pmjs-org-rimraf-rimraf-2-3-2-tgz https://registry.npmjs.org/rimraf/-/rimraf-2.3.2.tgz
+42 silly lockFile abb2e9cb-rimraf-2-3-2 rimraf@2.3.2
+43 silly lockFile abb2e9cb-rimraf-2-3-2 rimraf@2.3.2
+44 silly lockFile 30545280-rimraf rimraf@
+45 silly lockFile 30545280-rimraf rimraf@
+46 silly resolved [ { name: 'rimraf',
+46 silly resolved     version: '2.3.2',
+46 silly resolved     main: 'rimraf.js',
+46 silly resolved     description: 'A deep deletion module for node (like `rm -rf`)',
+46 silly resolved     author:
+46 silly resolved      { name: 'Isaac Z. Schlueter',
+46 silly resolved        email: 'i@izs.me',
+46 silly resolved        url: 'http://blog.izs.me/' },
+46 silly resolved     license:
+46 silly resolved      { type: 'MIT',
+46 silly resolved        url: 'https://github.com/isaacs/rimraf/raw/master/LICENSE' },
+46 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/rimraf.git' },
+46 silly resolved     scripts: { test: 'cd test && bash run.sh' },
+46 silly resolved     bin: { rimraf: './bin.js' },
+46 silly resolved     dependencies: { glob: '^4.4.2' },
+46 silly resolved     files: [ 'bin.js', 'rimraf.js', 'LICENSE', 'README.md' ],
+46 silly resolved     gitHead: '9d5ab4a8b6986ec909af04f6d91315e98f5893e8',
+46 silly resolved     bugs: { url: 'https://github.com/isaacs/rimraf/issues' },
+46 silly resolved     homepage: 'https://github.com/isaacs/rimraf',
+46 silly resolved     _id: 'rimraf@2.3.2',
+46 silly resolved     _shasum: '7304bd9275c401b89103b106b3531c1ef0c02fe9',
+46 silly resolved     _from: 'rimraf@',
+46 silly resolved     _npmVersion: '2.7.0',
+46 silly resolved     _nodeVersion: '1.4.2',
+46 silly resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+46 silly resolved     maintainers: [ [Object] ],
+46 silly resolved     dist:
+46 silly resolved      { shasum: '7304bd9275c401b89103b106b3531c1ef0c02fe9',
+46 silly resolved        tarball: 'http://registry.npmjs.org/rimraf/-/rimraf-2.3.2.tgz' },
+46 silly resolved     directories: {},
+46 silly resolved     _resolved: 'https://registry.npmjs.org/rimraf/-/rimraf-2.3.2.tgz' } ]
+47 info install rimraf@2.3.2 into /usr/local/lib
+48 info installOne rimraf@2.3.2
+49 verbose lib/node_modules/rimraf unbuild
+50 verbose tar unpack /home/freyer/.npm/rimraf/2.3.2/package.tgz
+51 silly lockFile fa089ae9-sr-local-lib-node-modules-rimraf tar:///usr/local/lib/node_modules/rimraf
+52 verbose lock tar:///usr/local/lib/node_modules/rimraf /home/freyer/.npm/fa089ae9-sr-local-lib-node-modules-rimraf.lock
+53 silly lockFile 10ba3074-yer-npm-rimraf-2-3-2-package-tgz tar:///home/freyer/.npm/rimraf/2.3.2/package.tgz
+54 verbose lock tar:///home/freyer/.npm/rimraf/2.3.2/package.tgz /home/freyer/.npm/10ba3074-yer-npm-rimraf-2-3-2-package-tgz.lock
+55 silly gunzTarPerm modes [ '755', '644' ]
+56 error Error: EACCES, mkdir '/usr/local/lib/node_modules/rimraf'
+56 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/rimraf']
+56 error   errno: 3,
+56 error   code: 'EACCES',
+56 error   path: '/usr/local/lib/node_modules/rimraf',
+56 error   fstream_type: 'Directory',
+56 error   fstream_path: '/usr/local/lib/node_modules/rimraf',
+56 error   fstream_class: 'DirWriter',
+56 error   fstream_stack:
+56 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+56 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+56 error      'Object.oncomplete (fs.js:108:15)' ] }
+57 error Please try running this command again as root/Administrator.
+58 error System Linux 3.2.0-4-486
+59 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "rimraf" "-g"
+60 error cwd /home/freyer/bachelorJamon
+61 error node -v v0.10.36
+62 error npm -v 1.4.28
+63 error path /usr/local/lib/node_modules/rimraf
+64 error fstream_path /usr/local/lib/node_modules/rimraf
+65 error fstream_type Directory
+66 error fstream_class DirWriter
+67 error code EACCES
+68 error errno 3
+69 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/rimraf'
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+70 error fstream_stack Object.oncomplete (fs.js:108:15)
+71 verbose exit [ 3, true ]
