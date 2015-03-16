@@ -1,15 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+var express = require('express');
+var stormpath = require('express-stormpath');
 
-var http = require('http');
-http.createServer(function(req, res) {
-    res.writeHead(200, {
-        'Content-Type': 'text/plain; charset=UTF-8'
-    });
-    
-    res.end('Hello from stormPach.\n');
-    
-}).listen(9080, "");
+var app = express();
+app.use(stormpath.init(app, {
+    apiKeyFile: '~/.stormpath/apiKey.properties',
+    application: 'https://api.stormpath.com/v1/applications/3IAxsi6RMbGtFAKMhQhro2',
+    secretKey: 'some_long_random_string',
+}));
+
+app.listen(3000);
