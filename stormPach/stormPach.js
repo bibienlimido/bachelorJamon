@@ -3,7 +3,7 @@ var stormpath = require('express-stormpath');
 
 var app = express();
 app.use(stormpath.init(app, {
-    apiKeyFile: '~/.stormpath/apiKey.properties',
+    
     application: 'https://api.stormpath.com/v1/applications/3IAxsi6RMbGtFAKMhQhro2',
     secretKey: 'some_long_random_string',
 }));
