@@ -1,21 +1,20 @@
 {
-    "name": "stormPach",
-    "description": "",
-    "version": "0.0.1",
-    "main": "./stormPach.js",
-    "author": {
-        "name": "freyer",
-        "email": "you@email.example"
-    },
-    "keywords": [],
-    "licenses": {
-        "type": "none"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/YOUR_LOGIN/stormPach.git"
-    },
-    "bugs": {
-        "url": "http://github.com/YOUR_LOGIN/stormPach/issues"
-    }
+  "name" : "stormPath",
+  "version" : "0.0.1",
+  "main" : "./stormPach.js",
+  "author" : {
+    "name" : "freyer",
+    "email" : "you@email.example"
+  },
+  "keywords" : [ ],
+  "licenses" : {
+    "type" : "none"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/YOUR_LOGIN/stormPach.git"
+  },
+  "bugs" : {
+    "url" : "http://github.com/YOUR_LOGIN/stormPach/issues"
+  }
 }
