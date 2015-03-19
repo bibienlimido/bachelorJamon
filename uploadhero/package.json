@@ -20,7 +20,8 @@
     },
     "dependencies": {
         "express": "~4.10.2",
-        "multer": "~0.1.6"
+        "multer": "~0.1.6",
+        "gridfs-stream" : "latest"
     }
 
 }
