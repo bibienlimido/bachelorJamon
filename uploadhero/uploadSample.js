@@ -5,10 +5,10 @@ var express = require('express'),
 var app = express()
 
 app.get('/', function(req, res){
-  res.send('index.html');
+  res.send('hello World');
 });
 
-app.post('/',[ multer({ dest: './uploads/'}), function(req, res){
+app.post('/index.html',[ multer({ dest: './uploads/'}), function(req, res){
     console.log(req.body) // form fields
     console.log(req.files) // form files
     res.status(204).end()
