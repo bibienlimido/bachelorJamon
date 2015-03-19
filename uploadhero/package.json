@@ -17,5 +17,10 @@
     },
     "bugs": {
         "url": "http://github.com/YOUR_LOGIN/uploadhero/issues"
+    },
+    "dependencies": {
+        "express": "~4.10.2",
+        "multer": "~0.1.6"
     }
+
 }
