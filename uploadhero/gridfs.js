@@ -11,4 +11,4 @@ db.open(function (err) {
   var gfs = Grid(db, mongo);
 
   // all set!
-})
+});
