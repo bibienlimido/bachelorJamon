@@ -8,7 +8,7 @@ var mongo = require('mongodb'),
   Db = mongo.Db,
   Grid = mongo.Grid;
 
-Db.connect("mongodb://192.1681.140:27017/exampleDb", function(err, db) {
+Db.connect("mongodb://192.168.1.140:27017/exampleDb", function(err, db) {
   if(err) return console.dir(err);
 
   var grid = new Grid(db, 'fs');    
