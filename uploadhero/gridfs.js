@@ -9,7 +9,7 @@ var gfs = Grid(db, mongo);
 var writestream = gfs.createWriteStream({
     filename: 'my_file.txt'
 });
-fs.createReadStream('/some/path').pipe(writestream);
+fs.createReadStream('bass_fast_dry.wav').pipe(writestream);
 
 // streaming from gridfs
 var readstream = gfs.createReadStream({
