@@ -16,10 +16,3 @@ var readstream = gfs.createReadStream({
   filename: 'my_file.txt'
 });
 
-//error handling, e.g. file does not exist
-readstream.on('error', function (err) {
-  console.log('An error occurred!', err);
-  throw err;
-});
-
-readstream.pipe(response);
