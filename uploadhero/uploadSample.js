@@ -4,6 +4,9 @@ var express = require("express");
 var multer = require("multer");
 var app = express();
 var done = false;
+var Grid = require('gridfs-stream');
+var db = new mongo.Db('music', new mongo.Server("192.168.1.140", 27017));
+var gfs = Grid(db, mongo);
 
 /*Configure the multer.*/
 
@@ -23,15 +26,21 @@ app.use(multer({dest: './uploads/',
 /*Handling routes.*/
 
 app.get('/', function(req, res) {
-    res.sendFile("index.html" ,{ root: __dirname });
+    res.sendFile("index.html", {root: __dirname});
     console.log(app.timeStamp);
 });
 
 app.post('/api/photo', function(req, res) {
-    if (done == true) {
+    if (done === true) {
         console.log(req.files);
         console.log(app.timeStamp);
         res.end("File uploaded.");
+
+
+        req.files(gfs.createWriteStream({
+            filename: 'test'
+        }));
+        res.send("Success!");
     }
 });
 
