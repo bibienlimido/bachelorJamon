@@ -4,6 +4,7 @@ var express = require("express");
 var multer = require("multer");
 var app = express();
 var done = false;
+var mongo = require('mongodb');
 var Grid = require('gridfs-stream');
 var db = new mongo.Db('music', new mongo.Server("192.168.1.140", 27017));
 var gfs = Grid(db, mongo);
