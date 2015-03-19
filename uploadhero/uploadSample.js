@@ -1,7 +1,7 @@
 /*Define dependencies.*/
 
 var express = require("express");
-
+var multer = require("multer")
 var app = express();
 var done = false;
 
