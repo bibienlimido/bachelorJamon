@@ -23,7 +23,7 @@ app.use(multer({dest: './uploads/',
 /*Handling routes.*/
 
 app.get('/', function(req, res) {
-    res.sendFile("./pages/index.html");
+    res.sendFile("index.html");
 });
 
 app.post('/api/photo', function(req, res) {
